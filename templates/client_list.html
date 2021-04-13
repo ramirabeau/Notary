@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Geaux-2 Texas Notary - Client List</h1>
+
+
+<div class="container">
+    <h2>Client List</h2>
+    <p>Client Contact Infromation Page</p>
+    <p>Information will be only assessible to the owner,</p>
+    <p>with proper credentials verified</p>
+
+    <div class="card">
+        <div class="card-header">
+            <span class="font-weight-bold">{{ client.Last_Name }}, {{ client.First_Name }} {{ client.Middle_Initial }}</span> &middot;
+            <span class="text-muted">{{ client.Email }}, {{ client.Phone_Number }}</span> &middot;
+        </div>
+        <div>
+            <span class="card-body">{{ client.Comment }}</span>
+            <span class="card-body">{{ client.Sub_Date }}</span>
+        </div>
+    </div>
+
+</div>
+
+{% endblock content %}

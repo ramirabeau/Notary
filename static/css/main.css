@@ -1,0 +1,117 @@
+/* Mobile Display */
+
+
+/* Footer placement, not working
+main > .container {
+    padding: 60px 15px 0;
+  }
+*/
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: wheat;
+    color: black
+}
+
+header {
+    background-color: rgba(68, 22, 8, 0.945);
+    color: rgb(231, 231, 231);
+    /*display: flex;*/
+    padding: 1em 0;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.header-txt {
+    font-size: 35px;
+}
+
+.header-img {
+    padding: .5rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid black;
+    border-radius: .5rem; */
+    width: 10em;
+    height: 10em;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.btn {
+    border: black solid 2px;
+    border-radius: .3em;
+    padding: .2rem;
+    margin: .5rem;
+    background-color: rgba(68, 22, 8, 0.945);
+    color: rgb(231, 231, 231);
+}
+
+.btn-cancel {
+    border: black solid 2px;
+    border-radius: .3em;
+    padding: .2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: red;
+    color: black;
+    display: flex;
+    text-align: center;
+}
+
+.submission {
+    border: black;
+    border-radius: .3em;
+}
+
+
+/* Desktop Display*/
+
+@media(min-width:768px) {
+    header {
+        background-color: rgba(68, 22, 8, 0.945);
+        color: rgb(231, 231, 231);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 0;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .header-img {
+        padding: .5rem;
+        padding-bottom: 1rem;
+        /* border: 1px solid black;
+        border-radius: .5rem; */
+        width: 15em;
+        height: 15em;
+        margin-left: 1rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+    .header-txt {
+        padding-left: 5em;
+        text-align: center;
+    }
+    .btn-cancel {
+        width: 200px;
+        margin-left: 5rem;
+    }
+    /*  .img-logo {
+        display: block;
+        width: 100px;
+        height: 30px;
+        padding-left: .5rem;
+        padding-top: .5rem;
+    }
+    .img-logo-square {
+        display: none;
+    }
+    .menu-text {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 13px;
+        font-weight: 700;
+    }  */
+}

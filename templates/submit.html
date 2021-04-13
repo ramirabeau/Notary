@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>Geaux-2 Texas Notary - Service Submission</h1>
+<div class="submission">
+    <div>
+        <h1>Service Request Submission</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, autem aspernatur! Quos veniam dolorem dolor sed, reiciendis amet explicabo? Eius, fugiat deleniti. Voluptatibus deleniti natus eveniet, atque nulla pariatur autem!</p>
+        <a href="{% url 'services' %}" class="btn-cancel">Cancel</a>
+    </div>
+    <div>
+        <h2>*Enter the box for submission*</h2>
+    </div>
+
+    <div>
+        <form>
+            <label for="fname">First name:  </label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="mi-init">Middle Initial:  </label>
+            <input type="text" id="mi-init" name="mi-init"><br><br>
+            <label for="lname">Last name:  </label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email Address:  </label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone Number:  </label>
+            <input type="int" id="phone" name="phone"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+{% endblock content %}
