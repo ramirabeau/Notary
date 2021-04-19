@@ -1,10 +1,14 @@
 from django.contrib import admin
-from .models import Client
+from .models import Client, Service
 
 #admin.site.register(Client)
 
 @admin.register(Client)
-class PersonAdmin(admin.ModelAdmin):
+class ClientAdmin(admin.ModelAdmin):
     list_display = ("Last_Name", "First_Name")
 
+""" @admin.register(Service)
+class ServiceAdmin(admin.ModelAdmin):
+    list_display = ("poa", "docs", "wills")
+ """
 # Register your models here.

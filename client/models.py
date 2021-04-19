@@ -17,6 +17,9 @@ class Client(models.Model,):
     )
     Comment = models.TextField(max_length=255, default='')
     Sub_Date = models.DateTimeField('Date Submitted', default='')
+
+class Service(models.Model,):
+    
     Service = models.SlugField(
         max_length=25,
         unique=True,
