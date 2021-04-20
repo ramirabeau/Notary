@@ -1,0 +1,17 @@
+{% load i18n %}{% autoescape off %} {% blocktranslate %}Hello {user.username}, thank you for registering at {{ site_name }}.\n One of our repersentatives will be contacting you soon to schedule and appointment.\n Thank you, and have a wonderful day. {%
+endblocktranslate %} {% translate "Thanks for using our site!" %} {% blocktranslate %}The {{ site_name }} team{% endblocktranslate %} {% endautoescape %}
+
+
+<!--
+**I want to add this to an html file similar to the password reset**
+
+    template_name = 'registration/signup.html'
+    subject = 'Welcome to Geaux-2 Notary'
+    message = (f'Hello {user.First_Name, user.Last_Name}, thank you for registering Geaux-2 Notary.'\n
+    'One of our repersentatives will be contacting you soon to schedule and appointment'\n
+    'Thank you, and have a wonderful day.')
+    email_from = settings.EMAIL_HOST_USER
+    recipient_list = [user.email, ]
+    send_mail( subject, message, email_from, recipient_list )
+
+-->
